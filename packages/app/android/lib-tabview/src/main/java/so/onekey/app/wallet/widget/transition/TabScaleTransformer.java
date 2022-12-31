@@ -1,10 +1,10 @@
-package so.onekey.app.wallet.widget.transition;
+package so.arbitrum.app.wallet.widget.transition;
 
 import android.util.Log;
 import android.util.TypedValue;
 import android.widget.TextView;
 
-import so.onekey.app.wallet.widget.SlidingTabLayoutBase;
+import so.arbitrum.app.wallet.widget.SlidingTabLayoutBase;
 
 public class TabScaleTransformer implements ITabScaleTransformer {
 

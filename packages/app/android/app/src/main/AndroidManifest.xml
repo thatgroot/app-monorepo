@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="so.onekey.app.wallet">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="so.arbitrum.app.wallet">
   <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
   <uses-permission android:name="android.permission.CAMERA"/>
   <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
@@ -31,7 +31,7 @@
         <category android:name="android.intent.category.LAUNCHER"/>
       </intent-filter>
       <intent-filter>
-        <data android:scheme="so.onekey.app.wallet"/>
+        <data android:scheme="so.arbitrum.app.wallet"/>
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>

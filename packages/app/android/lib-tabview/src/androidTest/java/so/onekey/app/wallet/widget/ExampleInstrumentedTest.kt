@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.widget
+package so.arbitrum.app.wallet.widget
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("so.onekey.app.wallet.widget.test", appContext.packageName)
+        assertEquals("so.arbitrum.app.wallet.widget.test", appContext.packageName)
     }
 }

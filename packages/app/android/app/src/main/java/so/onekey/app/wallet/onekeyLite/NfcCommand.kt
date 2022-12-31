@@ -1,15 +1,15 @@
-package so.onekey.app.wallet.onekeyLite
+package so.arbitrum.app.wallet.onekeyLite
 
 import android.nfc.tech.IsoDep
 import android.util.Log
 import org.haobtc.onekey.card.gpchannel.GPChannelNatives
-import so.onekey.app.wallet.keys.KeysNativeProvider
-import so.onekey.app.wallet.nfc.NFCExceptions
-import so.onekey.app.wallet.onekeyLite.entitys.CardResponse
-import so.onekey.app.wallet.onekeyLite.entitys.ParsedCertInfo
-import so.onekey.app.wallet.onekeyLite.entitys.SecureChanelParam
-import so.onekey.app.wallet.utils.HexUtils
-import so.onekey.app.wallet.utils.Utils
+import so.arbitrum.app.wallet.keys.KeysNativeProvider
+import so.arbitrum.app.wallet.nfc.NFCExceptions
+import so.arbitrum.app.wallet.onekeyLite.entitys.CardResponse
+import so.arbitrum.app.wallet.onekeyLite.entitys.ParsedCertInfo
+import so.arbitrum.app.wallet.onekeyLite.entitys.SecureChanelParam
+import so.arbitrum.app.wallet.utils.HexUtils
+import so.arbitrum.app.wallet.utils.Utils
 import java.io.IOException
 
 /**

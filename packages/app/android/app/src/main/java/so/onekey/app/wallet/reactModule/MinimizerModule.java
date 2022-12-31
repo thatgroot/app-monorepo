@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.reactModule;
+package so.arbitrum.app.wallet.reactModule;
 
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;

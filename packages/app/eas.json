@@ -7,6 +7,7 @@
       "android": {
         "image": "ubuntu-20.04-jdk-11-ndk-r21e",
         "ndk": "23.1.7779620",
+        "credentialsSource": "local",
         "env": {
           "PLATFORM": "android",
           "OTA_UPDATE_ENABLE": "false"
@@ -29,6 +30,7 @@
       "android": {
         "buildType": "apk",
         "gradleCommand": ":app:assembleDebug",
+        "credentialsSource": "local",
         "env": {
           "APPLICATION_ID_SUFFIX": "wrapper",
           "OTA_UPDATE_ENABLE": "true"
@@ -48,6 +50,7 @@
       "android": {
         "buildType": "app-bundle",
         "gradleCommand": ":app:bundleRelease",
+        "credentialsSource": "local",
         "env": {
           "ANDROID_CHANNEL": "google"
         }
@@ -67,6 +70,7 @@
       "android": {
         "buildType": "apk",
         "gradleCommand": ":app:assembleRelease",
+        "credentialsSource": "local",
         "env": {
           "ANDROID_CHANNEL": "direct"
         }
@@ -90,6 +94,7 @@
       },
       "android": {
         "serviceAccountKeyPath": "./pc-api-8644398719570171123-0-dcae07e2afab.json",
+        "credentialsSource": "local",
         "track": "internal"
       }
     }

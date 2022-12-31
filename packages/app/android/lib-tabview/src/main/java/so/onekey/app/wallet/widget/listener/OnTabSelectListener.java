@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.widget.listener;
+package so.arbitrum.app.wallet.widget.listener;
 
 public interface OnTabSelectListener {
     void onTabSelect(int position);

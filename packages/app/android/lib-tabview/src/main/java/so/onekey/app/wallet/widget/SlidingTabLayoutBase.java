@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.widget;
+package so.arbitrum.app.wallet.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -34,9 +34,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import so.onekey.app.wallet.widget.listener.OnTabSelectListener;
-import so.onekey.app.wallet.widget.transition.ITabScaleTransformer;
-import so.onekey.app.wallet.widget.transition.TabScaleTransformer;
+import so.arbitrum.app.wallet.widget.listener.OnTabSelectListener;
+import so.arbitrum.app.wallet.widget.transition.ITabScaleTransformer;
+import so.arbitrum.app.wallet.widget.transition.TabScaleTransformer;
 
 /**
  * 滑动TabLayout,对于ViewPager的依赖性强

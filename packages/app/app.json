@@ -20,7 +20,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "so.onekey.wallet",
+      "bundleIdentifier": "so.arbitrum.wallet",
       "associatedDomains": [
         "applinks:app.onekey.so"
       ]

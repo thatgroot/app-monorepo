@@ -115,7 +115,7 @@ class AppUpdates {
       case 'GooglePlay':
         Linking.canOpenURL('market://').then((supported) => {
           if (supported) {
-            Linking.openURL('market://details?id=so.onekey.app.wallet');
+            Linking.openURL('market://details?id=so.arbitrum.app.wallet');
           } else {
             this._openUrl(versionInfo.package.download);
           }

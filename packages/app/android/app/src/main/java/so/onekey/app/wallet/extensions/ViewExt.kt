@@ -1,8 +1,8 @@
-package so.onekey.app.wallet.extensions
+package so.arbitrum.app.wallet.extensions
 
 import androidx.annotation.ColorInt
 import androidx.core.content.ContextCompat
-import so.onekey.app.wallet.utils.Utils
+import so.arbitrum.app.wallet.utils.Utils
 
 private fun getApp() = Utils.getApp()
 private fun getTopActivity() = Utils.getTopActivity()

@@ -6,7 +6,7 @@ module.exports = {
     'main': 'dist/app.js',
     'version': process.env.VERSION,
   },
-  'appId': 'so.onekey.wallet.desktop',
+  'appId': 'so.arbitrum.wallet.desktop',
   'productName': 'OneKey',
   'copyright': 'Copyright © ${author}',
   'asar': true,

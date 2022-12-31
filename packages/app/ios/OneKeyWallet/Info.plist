@@ -25,7 +25,7 @@
 		<dict>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>so.onekey.app.wallet</string>
+				<string>so.arbitrum.app.wallet</string>
 				<string>onekey-wallet</string>
 				<string>wc</string>
 				<string>ethereum</string>
@@ -69,7 +69,7 @@
 	<string>Use photo library to read QR images.</string>
 	<key>NSUbiquitousContainers</key>
 	<dict>
-		<key>iCloud.so.onekey.wallet</key>
+		<key>iCloud.so.arbitrum.wallet</key>
 		<dict>
 			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
 			<false/>

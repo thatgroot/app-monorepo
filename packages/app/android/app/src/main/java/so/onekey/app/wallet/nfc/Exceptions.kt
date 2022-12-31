@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.nfc
+package so.arbitrum.app.wallet.nfc
 
 sealed class NFCExceptions(val code: Int, override val message: String? = null) : Exception(message) {
     fun toJson(): String {

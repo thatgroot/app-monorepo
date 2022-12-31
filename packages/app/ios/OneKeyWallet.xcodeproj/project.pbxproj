@@ -583,7 +583,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = so.onekey.wallet;
+				PRODUCT_BUNDLE_IDENTIFIER = so.arbitrum.wallet;
 				PRODUCT_NAME = OneKeyWallet;
 				PROVISIONING_PROFILE_SPECIFIER = "OnekeyX development";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -619,7 +619,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = so.onekey.wallet;
+				PRODUCT_BUNDLE_IDENTIFIER = so.arbitrum.wallet;
 				PRODUCT_NAME = OneKeyWallet;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

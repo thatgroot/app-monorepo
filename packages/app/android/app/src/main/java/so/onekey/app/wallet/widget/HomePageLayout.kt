@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.widget
+package so.arbitrum.app.wallet.widget
 
 import android.content.Context
 import android.graphics.Color
@@ -20,9 +20,9 @@ import com.facebook.react.bridge.ReactContext
 import com.facebook.react.uimanager.events.RCTEventEmitter
 import com.google.android.material.appbar.AppBarLayout
 import com.google.android.material.appbar.CollapsingToolbarLayout
-import so.onekey.app.wallet.R
-import so.onekey.app.wallet.utils.Utils
-import so.onekey.app.wallet.viewManager.homePage.TabProps
+import so.arbitrum.app.wallet.R
+import so.arbitrum.app.wallet.utils.Utils
+import so.arbitrum.app.wallet.viewManager.homePage.TabProps
 
 
 data class TabViewStyle(

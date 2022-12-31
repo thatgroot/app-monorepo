@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.keys
+package so.arbitrum.app.wallet.keys
 
 import org.junit.Test
 

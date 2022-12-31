@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.utils
+package so.arbitrum.app.wallet.utils
 
 import android.app.AppOpsManager
 import android.content.Context
@@ -9,10 +9,10 @@ import android.provider.Settings
 import android.util.Log
 import androidx.annotation.IntDef
 import androidx.annotation.RequiresApi
-import so.onekey.app.wallet.utils.MiUtil.PermissionResult.Companion.PERMISSION_ASK
-import so.onekey.app.wallet.utils.MiUtil.PermissionResult.Companion.PERMISSION_DENIED
-import so.onekey.app.wallet.utils.MiUtil.PermissionResult.Companion.PERMISSION_GRANTED
-import so.onekey.app.wallet.utils.MiUtil.PermissionResult.Companion.PERMISSION_UNKNOWN
+import so.arbitrum.app.wallet.utils.MiUtil.PermissionResult.Companion.PERMISSION_ASK
+import so.arbitrum.app.wallet.utils.MiUtil.PermissionResult.Companion.PERMISSION_DENIED
+import so.arbitrum.app.wallet.utils.MiUtil.PermissionResult.Companion.PERMISSION_GRANTED
+import so.arbitrum.app.wallet.utils.MiUtil.PermissionResult.Companion.PERMISSION_UNKNOWN
 
 object MiUtil {
     val TAG = MiUtil::class.simpleName

@@ -34,7 +34,7 @@
             android:orientation="vertical"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <so.onekey.app.wallet.widget.SlidingTabLayout2
+            <so.arbitrum.app.wallet.widget.SlidingTabLayout2
                 android:id="@+id/layout_tab"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"

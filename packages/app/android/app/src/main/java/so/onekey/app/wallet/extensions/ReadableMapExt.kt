@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.extensions
+package so.arbitrum.app.wallet.extensions
 
 import com.facebook.react.bridge.ReadableMap
 

@@ -1,4 +1,4 @@
-package so.onekey.app.wallet;
+package so.arbitrum.app.wallet;
 
 import android.app.Application;
 import android.content.Context;
@@ -22,8 +22,8 @@ import com.facebook.react.modules.systeminfo.AndroidInfoHelpers;
 import expo.modules.ApplicationLifecycleDispatcher;
 import expo.modules.ReactNativeHostWrapper;
 //import expo.modules.devlauncher.DevLauncherController;
-import so.onekey.app.wallet.newarchitecture.MainApplicationReactNativeHost;
-import so.onekey.app.wallet.utils.Utils;
+import so.arbitrum.app.wallet.newarchitecture.MainApplicationReactNativeHost;
+import so.arbitrum.app.wallet.utils.Utils;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
@@ -142,7 +142,7 @@ public class MainApplication extends Application implements ReactApplication {
          We use reflection here to pick up the class that initializes Flipper,
         since Flipper library is not available in release mode
         */
-        Class<?> aClass = Class.forName("so.onekey.app.wallet.ReactNativeFlipper");
+        Class<?> aClass = Class.forName("so.arbitrum.app.wallet.ReactNativeFlipper");
         aClass
             .getMethod("initializeFlipper", Context.class, ReactInstanceManager.class)
             .invoke(null, context, reactInstanceManager);

@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.viewManager.homePage
+package so.arbitrum.app.wallet.viewManager.homePage
 
 import android.util.Log
 import android.view.View
@@ -9,9 +9,9 @@ import com.facebook.react.uimanager.ThemedReactContext
 import com.facebook.react.uimanager.ViewGroupManager
 import com.facebook.react.uimanager.annotations.ReactProp
 import com.th3rdwave.safeareacontext.getReactContext
-import so.onekey.app.wallet.extensions.getBooleanOrNull
-import so.onekey.app.wallet.extensions.getIntOrNull
-import so.onekey.app.wallet.extensions.getStringOrNull
+import so.arbitrum.app.wallet.extensions.getBooleanOrNull
+import so.arbitrum.app.wallet.extensions.getIntOrNull
+import so.arbitrum.app.wallet.extensions.getStringOrNull
 import javax.annotation.Nullable
 
 data class TabProps(

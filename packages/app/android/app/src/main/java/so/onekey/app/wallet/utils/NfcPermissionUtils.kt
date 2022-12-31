@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.utils
+package so.arbitrum.app.wallet.utils
 
 import android.app.Activity
 import android.os.Build

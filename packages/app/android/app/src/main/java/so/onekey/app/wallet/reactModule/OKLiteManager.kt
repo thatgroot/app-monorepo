@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.reactModule
+package so.arbitrum.app.wallet.reactModule
 
 import android.content.Intent
 import android.nfc.NfcAdapter
@@ -11,13 +11,13 @@ import com.facebook.react.bridge.*
 import com.facebook.react.modules.core.DeviceEventManagerModule.RCTDeviceEventEmitter
 import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.Channel
-import so.onekey.app.wallet.nfc.NFCExceptions
-import so.onekey.app.wallet.nfc.NfcUtils
-import so.onekey.app.wallet.nfc.broadcast.NfcStatusChangeBroadcastReceiver
-import so.onekey.app.wallet.onekeyLite.OnekeyLiteCard
-import so.onekey.app.wallet.onekeyLite.entitys.CardState
-import so.onekey.app.wallet.utils.NfcPermissionUtils
-import so.onekey.app.wallet.utils.Utils
+import so.arbitrum.app.wallet.nfc.NFCExceptions
+import so.arbitrum.app.wallet.nfc.NfcUtils
+import so.arbitrum.app.wallet.nfc.broadcast.NfcStatusChangeBroadcastReceiver
+import so.arbitrum.app.wallet.onekeyLite.OnekeyLiteCard
+import so.arbitrum.app.wallet.onekeyLite.entitys.CardState
+import so.arbitrum.app.wallet.utils.NfcPermissionUtils
+import so.arbitrum.app.wallet.utils.Utils
 import java.util.concurrent.Executors
 import java.util.concurrent.atomic.AtomicInteger
 import javax.annotation.Nullable

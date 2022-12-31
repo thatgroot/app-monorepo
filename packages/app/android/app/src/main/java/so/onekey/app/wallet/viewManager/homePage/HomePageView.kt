@@ -1,9 +1,9 @@
-package so.onekey.app.wallet.viewManager.homePage
+package so.arbitrum.app.wallet.viewManager.homePage
 
 import android.content.Context
 import android.util.AttributeSet
 import android.view.ViewGroup
-import so.onekey.app.wallet.widget.HomePageLayout
+import so.arbitrum.app.wallet.widget.HomePageLayout
 
 class HomePageView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0

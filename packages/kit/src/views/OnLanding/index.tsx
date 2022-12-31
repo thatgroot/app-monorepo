@@ -20,7 +20,7 @@ export default function OnLanding() {
   }, []);
   const onAndroidDownload = useCallback(() => {
     openLinkUrl(
-      'https://play.google.com/store/apps/details?id=so.onekey.app.wallet',
+      'https://play.google.com/store/apps/details?id=so.arbitrum.app.wallet',
     );
   }, [openLinkUrl]);
   const oniOSDownload = useCallback(() => {

@@ -1,13 +1,13 @@
-package so.onekey.app.wallet
+package so.arbitrum.app.wallet
 
 import com.facebook.react.ReactPackage
 import com.facebook.react.bridge.NativeModule
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.uimanager.ViewManager
-import so.onekey.app.wallet.reactModule.OKLiteManager
-import so.onekey.app.wallet.reactModule.PermissionManager
-import so.onekey.app.wallet.reactModule.MinimizerModule
-import so.onekey.app.wallet.viewManager.homePage.HomePageManager
+import so.arbitrum.app.wallet.reactModule.OKLiteManager
+import so.arbitrum.app.wallet.reactModule.PermissionManager
+import so.arbitrum.app.wallet.reactModule.MinimizerModule
+import so.arbitrum.app.wallet.viewManager.homePage.HomePageManager
 
 
 class MainReactNativePackage : ReactPackage {

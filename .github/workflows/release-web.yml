@@ -121,7 +121,7 @@ jobs:
           web-hook-url: ${{ secrets.SLACK_DEV_WEBHOOK }}
           artifact-type: WEB
           artifact-name: OneKey-Desktop-WEB
-          artifact-bundle-id: 'so.onekey.wallet.web'
+          artifact-bundle-id: 'so.arbitrum.wallet.web'
           artifact-version-name: '${{ steps.dotenv.outputs.version }}@${{ env.BUILD_NUMBER }}'
           artifact-version-code: '${{ env.BUILD_NUMBER }}'
           artifact-download-url: '${{ env.ARTIFACTS_URL }}'

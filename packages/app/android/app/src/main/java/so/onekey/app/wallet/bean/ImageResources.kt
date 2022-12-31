@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.bean
+package so.arbitrum.app.wallet.bean
 
 import android.widget.ImageView
 import androidx.annotation.DrawableRes
@@ -7,7 +7,7 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CircleCrop
 import com.bumptech.glide.request.RequestOptions
 import com.facebook.common.internal.Objects
-import so.onekey.app.wallet.R
+import so.arbitrum.app.wallet.R
 
 interface ImageResources {
   fun intoTarget(imageView: ImageView)

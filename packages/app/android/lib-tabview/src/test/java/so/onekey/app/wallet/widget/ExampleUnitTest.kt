@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.widget
+package so.arbitrum.app.wallet.widget
 
 import org.junit.Test
 

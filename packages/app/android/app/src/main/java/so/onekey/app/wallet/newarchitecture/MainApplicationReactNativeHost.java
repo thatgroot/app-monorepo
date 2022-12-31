@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.newarchitecture;
+package so.arbitrum.app.wallet.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import so.onekey.app.wallet.BuildConfig;
-import so.onekey.app.wallet.newarchitecture.components.MainComponentsRegistry;
-import so.onekey.app.wallet.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import so.arbitrum.app.wallet.BuildConfig;
+import so.arbitrum.app.wallet.newarchitecture.components.MainComponentsRegistry;
+import so.arbitrum.app.wallet.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

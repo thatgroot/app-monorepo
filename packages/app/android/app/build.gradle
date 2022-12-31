@@ -155,7 +155,7 @@ android {
 
     defaultConfig {
         missingDimensionStrategy 'react-native-camera', 'mlkit'
-        applicationId 'so.onekey.app.wallet.dev'
+        applicationId 'so.arbitrum.app.wallet.dev'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
 
@@ -395,7 +395,7 @@ dependencies {
 
     // Details see https://github.com/google/gson
     implementation 'com.google.code.gson:gson:2.8.9'
-    
+
     // Details see https://developer.android.com/kotlin/coroutines?hl=zh-cn
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
 

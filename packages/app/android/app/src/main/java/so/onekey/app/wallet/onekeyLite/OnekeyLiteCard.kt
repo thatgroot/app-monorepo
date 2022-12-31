@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.onekeyLite
+package so.arbitrum.app.wallet.onekeyLite
 
 import android.app.Activity
 import android.nfc.tech.IsoDep
@@ -6,12 +6,12 @@ import android.util.Log
 import androidx.fragment.app.FragmentActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import so.onekey.app.wallet.nfc.NFCExceptions
-import so.onekey.app.wallet.nfc.NfcUtils
-import so.onekey.app.wallet.onekeyLite.entitys.CardState
-import so.onekey.app.wallet.reactModule.OKLiteManager
-import so.onekey.app.wallet.utils.HexUtils
-import so.onekey.app.wallet.utils.NfcPermissionUtils
+import so.arbitrum.app.wallet.nfc.NFCExceptions
+import so.arbitrum.app.wallet.nfc.NfcUtils
+import so.arbitrum.app.wallet.onekeyLite.entitys.CardState
+import so.arbitrum.app.wallet.reactModule.OKLiteManager
+import so.arbitrum.app.wallet.utils.HexUtils
+import so.arbitrum.app.wallet.utils.NfcPermissionUtils
 
 object OnekeyLiteCard {
     const val TAG = "OnekeyLiteCard"

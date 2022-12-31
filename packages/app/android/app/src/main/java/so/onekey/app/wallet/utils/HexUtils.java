@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.utils;
+package so.arbitrum.app.wallet.utils;
 
 import java.math.BigInteger;
 

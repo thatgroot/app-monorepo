@@ -72,7 +72,7 @@ jobs:
         with:
           versionCode: ${{ env.BUILD_NUMBER }}
           versionName: ${{ steps.dotenv.outputs.version }}
-          packageName: 'so.onekey.app.wallet'
+          packageName: 'so.arbitrum.app.wallet'
           android_dir: ./packages/app
 
       - name: Write .env.version
@@ -101,4 +101,5 @@ jobs:
         if: ${{ !github.event.workflow_run }}
         run: |
           cd packages/app
+          echo ${{ secrets.CREDENTIALS_JSON }} | base64 -d > packages/app/credentials.json
           eas build --profile=production --platform android --non-interactive --no-wait --resource-class large

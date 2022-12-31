@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.newarchitecture.modules;
+package so.arbitrum.app.wallet.newarchitecture.modules;
 
 import com.facebook.jni.HybridData;
 import com.facebook.react.ReactPackage;

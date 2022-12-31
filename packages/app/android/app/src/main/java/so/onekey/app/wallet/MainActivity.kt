@@ -1,4 +1,4 @@
-package so.onekey.app.wallet
+package so.arbitrum.app.wallet
 
 import android.os.Bundle
 import com.facebook.react.ReactActivity

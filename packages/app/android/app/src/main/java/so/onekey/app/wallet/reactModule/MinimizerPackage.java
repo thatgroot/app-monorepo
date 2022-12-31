@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.reactModule;
+package so.arbitrum.app.wallet.reactModule;
 
 import java.util.Arrays;
 import java.util.Collections;

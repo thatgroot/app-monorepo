@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.nfc.broadcast
+package so.arbitrum.app.wallet.nfc.broadcast
 
 import android.content.BroadcastReceiver
 import android.content.Context

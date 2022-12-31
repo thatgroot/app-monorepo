@@ -1,4 +1,4 @@
-package so.onekey.app.wallet.nfc
+package so.arbitrum.app.wallet.nfc
 
 import android.app.Activity
 import android.app.PendingIntent
@@ -12,7 +12,7 @@ import android.nfc.tech.NfcF
 import android.nfc.tech.NfcV
 import android.os.Build
 import android.provider.Settings
-import so.onekey.app.wallet.utils.MiUtil
+import so.arbitrum.app.wallet.utils.MiUtil
 
 object NfcUtils {
 
