@@ -32,10 +32,10 @@ yarn-error.log
 webpack.config.preview.json
 webpack.config.preview.devServer.json
 
-*.jks
-*.p8
-*.p12
-*.key
+# *.jks
+# *.p8
+# *.p12
+# *.key
 *.mobileprovision
 *.orig.*
 web-build/
