@@ -29,7 +29,7 @@ buildscript {
     dependencies {
         classpath('com.android.tools.build:gradle:7.3.1')
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
-        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'com.google.gms:google-services:4.3.13'
         classpath 'com.google.firebase:perf-plugin:1.4.2'
         classpath 'com.google.firebase:firebase-crashlytics-gradle:2.8.1'
         classpath("com.facebook.react:react-native-gradle-plugin")
@@ -40,7 +40,7 @@ buildscript {
 }
 
 allprojects {
-    repositories { 
+    repositories {
         // https://github.com/facebook/react-native/issues/35210
         // TODO: remove this section once update to 0.71
         exclusiveContent {

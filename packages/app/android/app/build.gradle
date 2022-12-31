@@ -5,9 +5,13 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'com.google.gms.google-services'
 apply plugin: 'com.google.firebase.crashlytics'
 apply plugin: 'com.google.firebase.firebase-perf'
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 import com.android.build.OutputFile
 import org.apache.tools.ant.taskdefs.condition.Os
+
+
 
 /**
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
@@ -139,7 +143,6 @@ def reactNativeArchitectures() {
     def value = project.getProperties().get("reactNativeArchitectures")
     return value ? value.split(",") : ["armeabi-v7a", "x86", "x86_64", "arm64-v8a"]
 }
-
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -359,6 +362,9 @@ dependencies {
         }
     }
 
+    implementation platform('com.google.firebase:firebase-bom:31.1.1')
+    implementation 'com.google.firebase:firebase-analytics'
+
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {
         exclude group: 'com.facebook.fbjni'
@@ -378,7 +384,6 @@ dependencies {
         implementation jscFlavor
     }
 
-    // implementation project(path: ':lib-keys-secret')
     implementation project(':lib-tabview')
 
     // Custom Add Library
