@@ -31,8 +31,8 @@ rm -rf ./packages/app/src/public/static/connect
 rm -rf ./packages/app/android/.gradle
 rm -rf ./packages/app/android/build
 rm -rf ./packages/app/android/app/build
-rm -rf ./packages/app/android/lib-keys-secret/build
-rm -rf ./packages/app/android/lib-keys-secret/.cxx
+# rm -rf ./packages/app/android/lib-keys-secret/build
+# rm -rf ./packages/app/android/lib-keys-secret/.cxx
 rm -rf ./packages/app/android/app/src/main/assets/web-embed
 rm -rf ./packages/app/src/public/static/js-sdk
 
