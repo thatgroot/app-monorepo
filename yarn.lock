@@ -27954,7 +27954,7 @@ optjs@latest:
   peerDependencies:
     react: "*"
     react-native: "*"
-  checksum: 9bd8382505ab344982d2e6543e1586fbbf7f9fa2b22d72fdad3c283decfd8be2c2177c6ca8ad5200cb5c2ae460d7eaa9db2eb3335b500a451348f2aef8ce397f
+  checksum: 690f7ba9c38f9bd79682343b990de27522a96aa13711270bfbc72006b5cd90deb438c6ceae6507dd15ee0a133ba795234d72ee0617b9360bcd0bde746aa0bcee
   languageName: node
   linkType: hard
 
