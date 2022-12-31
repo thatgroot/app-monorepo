@@ -396,6 +396,7 @@ dependencies {
         implementation jscFlavor
     }
 
+    implementation project(path: ':lib-keys-secret')
     implementation project(':lib-tabview')
 
     // Custom Add Library
