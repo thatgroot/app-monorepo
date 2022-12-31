@@ -58,7 +58,7 @@ allprojects {
            }
        }
         maven {
-            // expo-camera bundles a custom com.google.android:cameraview
+            // expo-camera bundles a custom com.google.android:camera-view
             url(new File(["node", "--print", "require.resolve('expo-camera/package.json')"].execute(null, rootDir).text.trim(), "../android/maven"))
         }
 
