@@ -1,5 +1,4 @@
 {
-  "ENTRY_FILE": "./__generated__/AppEntry.js",
   "cli": {
     "version": ">= 0.37.0"
   },
