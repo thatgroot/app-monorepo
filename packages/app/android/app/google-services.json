@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "117481276073",
-    "project_id": "test-aa6e3",
-    "storage_bucket": "test-aa6e3.appspot.com"
+    "project_number": "840420954041",
+    "project_id": "arbitrum-wallet",
+    "storage_bucket": "arbitrum-wallet.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:117481276073:android:bdffdba4b36cd239b5dfb8",
+        "mobilesdk_app_id": "1:840420954041:android:9caae0fdc0afefb0acb068",
         "android_client_info": {
-          "package_name": "so.arbitrum.app.wallet.dev"
+          "package_name": "so.arbitrum.app.wallet"
         }
       },
       "oauth_client": [
         {
-          "client_id": "117481276073-fs7omuqsmvgtg6bci3ja1gvo03g0d984.apps.googleusercontent.com",
+          "client_id": "840420954041-i971l2qi0l211akdbhi0s2sufl595l7v.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCZE4y0ffcHVo8i0BRHHENkok-U8Vq9Pr8"
+          "current_key": "AIzaSyCOwtXE32ziyExW96F4qqW01xahOa7WnUM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "117481276073-fs7omuqsmvgtg6bci3ja1gvo03g0d984.apps.googleusercontent.com",
+              "client_id": "840420954041-i971l2qi0l211akdbhi0s2sufl595l7v.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
