@@ -1,9 +1,9 @@
 {
   "expo": {
-    "scheme": "onekey-wallet",
-    "name": "OneKey Wallet",
-    "slug": "OneKey-Wallet",
-    "owner": "onekeyhq",
+    "scheme": "arbitrum-wallet",
+    "name": "Arbitrum Wallet",
+    "slug": "Arbitrum-Wallet",
+    "owner": "thatgroot",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -36,7 +36,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "640c3c38-d160-48c3-b4a3-40d4fc8aeb08"
+        "projectId": "7e290a5a-a309-44f7-9326-979ed1bc4e36"
       }
     }
   }
