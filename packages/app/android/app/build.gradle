@@ -155,7 +155,7 @@ android {
 
     defaultConfig {
         missingDimensionStrategy 'react-native-camera', 'mlkit'
-        applicationId 'so.arbitrum.app.wallet.dev'
+        applicationId 'so.arbitrum.app.wallet'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
 
