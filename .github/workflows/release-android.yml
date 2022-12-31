@@ -94,11 +94,11 @@ jobs:
         if: ${{ github.event.workflow_run }}
         run: |
           cd packages/app
-          eas build --profile=production --platform android --non-interactive --no-wait --resource-class large
-          eas build --profile=production-store --platform android --non-interactive --no-wait --resource-class large --auto-submit
+          eas build --profile=production --platform android --no-wait --resource-class large
+          eas build --profile=production-store --platform android --no-wait --resource-class large --auto-submit
 
       - name: Build on EAS
         if: ${{ !github.event.workflow_run }}
         run: |
           cd packages/app
-          eas build --profile=production --platform android --non-interactive --no-wait --resource-class large
+          eas build --profile=production --platform android --no-wait --resource-class large
