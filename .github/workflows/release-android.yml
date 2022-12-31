@@ -101,5 +101,4 @@ jobs:
         if: ${{ !github.event.workflow_run }}
         run: |
           cd packages/app
-          echo ${{ secrets.CREDENTIALS_JSON }} | base64 -d > packages/app/credentials.json
           eas build --profile=production --platform android --non-interactive --no-wait --resource-class large
