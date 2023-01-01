@@ -71,7 +71,7 @@
         "ENTRY_FILE": "./__generated__/AppEntry.js"
       },
       "android": {
-        "buildType": "apk",
+        "buildType": "app-bundle",
         "gradleCommand": ":app:assembleRelease",
         "credentialsSource": "local",
         "env": {
