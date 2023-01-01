@@ -28,10 +28,10 @@ export const stackScreenList = [
     name: EOnboardingRoutes.ConnectWallet,
     component: ConnectWallet,
   },
-  {
-    name: EOnboardingRoutes.ConnectHardwareModal,
-    component: ConnectHardware,
-  },
+  // {
+  //   name: EOnboardingRoutes.ConnectHardwareModal,
+  //   component: ConnectHardware,
+  // },
   {
     name: EOnboardingRoutes.ImportWallet,
     component: ImportWallet,

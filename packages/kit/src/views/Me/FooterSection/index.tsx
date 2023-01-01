@@ -115,7 +115,7 @@ export const FooterAction = () => {
         <Typography.Body2 color="text-subdued" mt="2">
           {intl.formatMessage(
             { id: 'content__state_logs_desc' },
-            { 0: 'hi@onekey.so' },
+            { 0: 'support@arbitrumwallet.com' },
           )}
         </Typography.Body2>
       </Pressable>

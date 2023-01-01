@@ -186,13 +186,14 @@ function Body() {
       }
       renderSectionHeader={({ section }: { section: IWalletDataSection }) => {
         const isEmptyData = !section?.data?.length;
-
         return (
-          <SectionHeader
-            section={section}
-            type={section.type}
-            isEmptyData={isEmptyData}
-          />
+          section.type === EWalletDataSectionType.hd && (
+            <SectionHeader
+              section={section}
+              type={section.type}
+              isEmptyData={isEmptyData}
+            />
+          )
         );
       }}
       renderItem={({
@@ -245,25 +246,25 @@ function Body() {
               </Center>
             );
           }
-          if (section.type === EWalletDataSectionType.hw) {
-            text = intl.formatMessage({
-              id: 'action__connect_hardware_wallet' as any,
-            });
-            leftView = (
-              <Center
-                size={`${iconSize}px`}
-                borderWidth={2}
-                borderColor="border-default"
-                borderStyle="dashed"
-                borderRadius="full"
-              >
-                <Icon
-                  size={platformEnv.isNative ? 24 : 20}
-                  name={platformEnv.isNative ? 'LinkOutline' : 'LinkMini'}
-                />
-              </Center>
-            );
-          }
+          // if (section.type === EWalletDataSectionType.hw) {
+          //   text = intl.formatMessage({
+          //     id: 'action__connect_hardware_wallet' as any,
+          //   });
+          //   leftView = (
+          //     <Center
+          //       size={`${iconSize}px`}
+          //       borderWidth={2}
+          //       borderColor="border-default"
+          //       borderStyle="dashed"
+          //       borderRadius="full"
+          //     >
+          //       <Icon
+          //         size={platformEnv.isNative ? 24 : 20}
+          //         name={platformEnv.isNative ? 'LinkOutline' : 'LinkMini'}
+          //       />
+          //     </Center>
+          //   );
+          // }
           return (
             <>
               <Box px="8px">

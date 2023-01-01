@@ -70,7 +70,7 @@ const SetupHardwareModal: FC = () => {
       </PressableItem>
 
       {/* Restore Hardware Wallet option */}
-      <PressableItem
+      {/* <PressableItem
         borderRadius="12px"
         px={4}
         onPress={() => {
@@ -98,7 +98,7 @@ const SetupHardwareModal: FC = () => {
             {intl.formatMessage({ id: 'modal__restore_wallet_desc' })}
           </Typography.Body2>
         </VStack>
-      </PressableItem>
+      </PressableItem> */}
     </VStack>
   );
 

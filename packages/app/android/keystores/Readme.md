@@ -11,3 +11,8 @@ keytool -genkeypair -v -storetype PKCS12 -keystore my-upload-key.keystore -alias
 keytool -list -v -keystore release.keystore -alias key0
 
 
+
+
+# generate debug store
+
+ keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000

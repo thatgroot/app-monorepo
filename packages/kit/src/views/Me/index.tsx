@@ -22,7 +22,7 @@ export const Me = () => {
       <ScrollView px={4} py={{ base: 6, md: 8 }} bg="background-default">
         <Box w="full" maxW={768} mx="auto" pb={`${inset.bottom}px`}>
           <UtilSection />
-          <DefaultSection />
+          {/* <DefaultSection /> */}
           <GenaralSection />
           <SecuritySection />
           <PushSection />
@@ -31,13 +31,13 @@ export const Me = () => {
           {devModeEnable ? <DevSettingSection /> : null}
         </Box>
       </ScrollView>
-      <Box
+      {/* <Box
         position="absolute"
         bottom={{ base: 4, md: 8 }}
         right={{ base: 4, md: 8 }}
       >
         <HelpSelector />
-      </Box>
+      </Box> */}
     </Box>
   );
 };

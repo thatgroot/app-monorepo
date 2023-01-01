@@ -154,7 +154,7 @@ const HwWalletGroup: FC<HwWalletGroupProps> = ({
         />
       )}
       <VStack space={2}>
-        {walletGroup.wallets.map((wallet, childIndex) => (
+        {/* {walletGroup.wallets.map((wallet, childIndex) => (
           <WalletItem
             key={`${wallet.id}${index}${childIndex}`}
             onPress={() => {
@@ -171,7 +171,7 @@ const HwWalletGroup: FC<HwWalletGroupProps> = ({
             status={getWalletItemStatus(wallet, childIndex)}
             isPassphrase={!!wallet.passphraseState}
           />
-        ))}
+        ))} */}
         {!!passphraseMode && onAddPassphraseWallet && (
           <Center>
             <Pressable
@@ -306,7 +306,7 @@ const LeftSide: FC<LeftSideProps> = ({
             {wallets.some((wallet) => wallet.type === 'hd') && <Box h={4} />}
           </VStack>
           {/* All Hardware Wallets */}
-          <VStack space={2}>
+          {/* <VStack space={2}>
             {hwWallet.map((wallet, index) => (
               <HwWalletGroup
                 key={`${index}`}
@@ -318,7 +318,7 @@ const LeftSide: FC<LeftSideProps> = ({
                 onAddPassphraseWallet={onAddPassphraseWallet}
               />
             ))}
-          </VStack>
+          </VStack> */}
           {wallets.some((wallet) => wallet.type === 'hw') && <Box h={6} />}
           {/* imported | watching | external  wallet */}
           <VStack space={2}>

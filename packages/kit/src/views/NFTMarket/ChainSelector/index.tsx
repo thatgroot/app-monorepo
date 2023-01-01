@@ -44,10 +44,15 @@ const ChainSelector: FC<Props> = ({
   const options = useMemo(() => {
     if (!networks) return [];
 
+    console.log('networks', networks);
+
     return networks
       .filter((network) =>
         // @ts-ignore
         ChainSelectorNetWorks.includes(network.id),
+      )
+      .filter(
+        (network) => network.shortCode === 'eth' || network.shortCode === 'bsc',
       )
       .map((network) => ({
         title: network.shortName,

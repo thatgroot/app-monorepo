@@ -51,25 +51,25 @@ const Body: FC<BodyProps> = () => {
         },
       ],
     },
-    {
-      type: 'hw',
-      data: [
-        {
-          walletImage: 'hw',
-          hwWalletType: 'classic',
-          name: 'My Classic',
-          isActive: false,
-          status: 'connected',
-        },
-        {
-          walletImage: 'hw',
-          hwWalletType: 'mini',
-          name: 'My Mini',
-          isActive: false,
-          hiddenWallets: ['Hidden Wallet #1', 'Hidden Wallet #2'],
-        },
-      ],
-    },
+    // {
+    //   type: 'hw',
+    //   data: [
+    //     {
+    //       walletImage: 'hw',
+    //       hwWalletType: 'classic',
+    //       name: 'My Classic',
+    //       isActive: false,
+    //       status: 'connected',
+    //     },
+    //     {
+    //       walletImage: 'hw',
+    //       hwWalletType: 'mini',
+    //       name: 'My Mini',
+    //       isActive: false,
+    //       hiddenWallets: ['Hidden Wallet #1', 'Hidden Wallet #2'],
+    //     },
+    //   ],
+    // },
     {
       type: 'other',
       data: [

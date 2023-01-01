@@ -108,67 +108,67 @@ export const tabRoutes: TabRouteConfig[] = [
       },
     ],
   },
-  {
-    name: TabRoutes.Swap,
-    component: SwapScreen,
-    tabBarIcon: () => 'ArrowsRightLeftOutline',
-    translationId: 'title__Swap_Bridge',
-    children: [
-      {
-        name: HomeRoutes.SwapHistory,
-        component: SwapHistory,
-      },
-    ],
-  },
-  {
-    name: TabRoutes.NFT,
-    component: toFocusedLazy(NFTMarket, {
-      rootTabName: TabRoutes.NFT,
-    }),
-    tabBarIcon: (focused) => (focused ? 'PhotoSolid' : 'PhotoOutline'),
-    translationId: 'title__nft',
-    children: [
-      {
-        name: HomeRoutes.NFTMarketStatsList,
-        component: NFTMarketStatsList,
-      },
-      {
-        name: HomeRoutes.NFTMarketLiveMintingList,
-        component: NFTMarketLiveMintingList,
-      },
-      {
-        name: HomeRoutes.NFTMarketCollectionScreen,
-        component: NFTMarketCollectionScreen,
-      },
-      {
-        name: HomeRoutes.NFTPNLScreen,
-        component: PNLDetailScreen,
-        alwaysShowBackButton: true,
-      },
-    ],
-  },
-  {
-    name: TabRoutes.Discover,
-    component: toFocusedLazy(DiscoverScreen, {
-      rootTabName: TabRoutes.Discover,
-    }),
-    tabBarIcon: (focused) => (focused ? 'CompassSolid' : 'CompassOutline'),
-    translationId: 'title__explore',
-    children: [
-      {
-        name: HomeRoutes.ExploreScreen,
-        component: DiscoverHome,
-      },
-      {
-        name: HomeRoutes.DAppListScreen,
-        component: DAppList,
-      },
-      {
-        name: HomeRoutes.MyDAppListScreen,
-        component: MyDAppList,
-      },
-    ],
-  },
+  // {
+  //   name: TabRoutes.Swap,
+  //   component: SwapScreen,
+  //   tabBarIcon: () => 'ArrowsRightLeftOutline',
+  //   translationId: 'title__Swap_Bridge',
+  //   children: [
+  //     {
+  //       name: HomeRoutes.SwapHistory,
+  //       component: SwapHistory,
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: TabRoutes.NFT,
+  //   component: toFocusedLazy(NFTMarket, {
+  //     rootTabName: TabRoutes.NFT,
+  //   }),
+  //   tabBarIcon: (focused) => (focused ? 'PhotoSolid' : 'PhotoOutline'),
+  //   translationId: 'title__nft',
+  //   children: [
+  //     {
+  //       name: HomeRoutes.NFTMarketStatsList,
+  //       component: NFTMarketStatsList,
+  //     },
+  //     {
+  //       name: HomeRoutes.NFTMarketLiveMintingList,
+  //       component: NFTMarketLiveMintingList,
+  //     },
+  //     {
+  //       name: HomeRoutes.NFTMarketCollectionScreen,
+  //       component: NFTMarketCollectionScreen,
+  //     },
+  //     {
+  //       name: HomeRoutes.NFTPNLScreen,
+  //       component: PNLDetailScreen,
+  //       alwaysShowBackButton: true,
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: TabRoutes.Discover,
+  //   component: toFocusedLazy(DiscoverScreen, {
+  //     rootTabName: TabRoutes.Discover,
+  //   }),
+  //   tabBarIcon: (focused) => (focused ? 'CompassSolid' : 'CompassOutline'),
+  //   translationId: 'title__explore',
+  //   children: [
+  //     {
+  //       name: HomeRoutes.ExploreScreen,
+  //       component: DiscoverHome,
+  //     },
+  //     {
+  //       name: HomeRoutes.DAppListScreen,
+  //       component: DAppList,
+  //     },
+  //     {
+  //       name: HomeRoutes.MyDAppListScreen,
+  //       component: MyDAppList,
+  //     },
+  //   ],
+  // },
   {
     name: TabRoutes.Me,
     component: toFocusedLazy(MeScreen, {
@@ -225,19 +225,19 @@ export const tabRoutes: TabRouteConfig[] = [
   },
 ];
 
-if (process.env.NODE_ENV !== 'production') {
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-  const DevelopScreen = require('@onekeyhq/kit/src/views/Developer').default;
+// if (process.env.NODE_ENV !== 'production') {
+//   // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+//   const DevelopScreen = require('@onekeyhq/kit/src/views/Developer').default;
 
-  tabRoutes.push({
-    name: TabRoutes.Developer,
-    component: toFocusedLazy(DevelopScreen, {
-      rootTabName: TabRoutes.Developer,
-    }),
-    tabBarIcon: () => 'ChipOutline',
-    translationId: 'form__dev_mode',
-  });
-}
+//   tabRoutes.push({
+//     name: TabRoutes.Developer,
+//     component: toFocusedLazy(DevelopScreen, {
+//       rootTabName: TabRoutes.Developer,
+//     }),
+//     tabBarIcon: () => 'ChipOutline',
+//     translationId: 'form__dev_mode',
+//   });
+// }
 
 const Stack = createNativeStackNavigator();
 

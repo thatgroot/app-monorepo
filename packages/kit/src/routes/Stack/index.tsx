@@ -86,9 +86,9 @@ const TokenDetail = createLazyComponent(
 const TransactionHistory = createLazyComponent(
   () => import('@onekeyhq/kit/src/views/TransactionHistory'),
 );
-const UpdateAlert = createLazyComponent(
-  () => import('@onekeyhq/kit/src/views/Update/Alert'),
-);
+// const UpdateAlert = createLazyComponent(
+//   () => import('@onekeyhq/kit/src/views/Update/Alert'),
+// );
 const Webview = createLazyComponent(
   () => import('@onekeyhq/kit/src/views/Webview'),
 );
@@ -350,7 +350,7 @@ function MainScreen() {
         <NetworkAccountSelectorEffectsSingleton />
         <WalletSelectorEffectsSingleton />
         {/* TODO Waiting notification component */}
-        <UpdateAlert />
+        {/* <UpdateAlert /> */}
         <ChainWebEmbed />
       </Box>
     </RootSiblingParent>

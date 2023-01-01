@@ -148,11 +148,11 @@ export const AboutSection = () => {
             {settings.buildNumber ? `-${settings.buildNumber}` : ''}
           </Text>
         </Pressable>
-        {!platformEnv.isMas ? <AutoUpdateSectionItem /> : null}
-        {showRate ? (
+        {/* {!platformEnv.isMas ? <AutoUpdateSectionItem /> : null} */}
+        {/* {showRate ? (
           <AppRateSectionItem onAfterOnpenReview={checkShowAppReview} />
-        ) : null}
-        <Pressable
+        ) : null} */}
+        {/* <Pressable
           display="flex"
           flexDirection="row"
           alignItems="center"
@@ -292,7 +292,7 @@ export const AboutSection = () => {
             color="icon-subdued"
             size={20}
           />
-        </Pressable>
+        </Pressable> */}
       </Box>
     </Box>
   );

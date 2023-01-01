@@ -63,7 +63,7 @@ if (platformEnv.isExtension) {
 }
 
 export const WALLET_CONNECT_CLIENT_META = {
-  description: 'Connect with OneKey',
+  description: 'Connect with Arbitrum',
   // wallet-connect identify different dapps by url
   url: `https://${platformName}.onekey.so`,
   icons: [
@@ -71,7 +71,7 @@ export const WALLET_CONNECT_CLIENT_META = {
     'https://www.onekey.so/favicon.ico',
     // 'https://example.walletconnect.org/favicon.ico'
   ],
-  name: `OneKey ${platformNameShort}`,
+  name: `Arbitrum ${platformNameShort}`,
 };
 
 export const WALLET_CONNECT_WALLET_NAMES = {

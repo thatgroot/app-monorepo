@@ -35,7 +35,7 @@ type NavigationProps = NativeStackNavigationProp<
 
 export const Listing: FC = () => {
   const intl = useIntl();
-  const isSmallScreen = useIsVerticalLayout();
+  // const isSmallScreen = useIsVerticalLayout();
   const { allNetworks } = useManageNetworks();
   const [search, setSearch] = useState('');
   const navigation = useNavigation<NavigationProps>();
@@ -97,24 +97,29 @@ export const Listing: FC = () => {
       header={intl.formatMessage({ id: 'action__customize_network' })}
       height="560px"
       hideSecondaryAction
-      primaryActionProps={{
-        type: 'primary',
-        w: isSmallScreen ? 'full' : undefined,
-      }}
-      primaryActionTranslationId="action__add_network"
-      onPrimaryActionPress={() => onPress()}
+      hidePrimaryAction
+      // primaryActionProps={{
+      //   type: 'primary',
+      //   w: isSmallScreen ? 'full' : undefined,
+      // }}
+      // primaryActionTranslationId="action__add_network"
+      // onPrimaryActionPress={() => onPress()}
     >
-      <Searchbar
+      {/* <Searchbar
         w="full"
         value={search}
         mb="4"
         onChangeText={(text) => setSearch(text)}
         placeholder={intl.formatMessage({ id: 'content__search' })}
         onClear={() => setSearch('')}
-      />
+      /> */}
       {data.length > 0 ? (
         <List
-          data={data}
+          data={data.filter(
+            (d: Network) =>
+              d.shortCode?.toLowerCase() === 'eth' ||
+              d.shortCode?.toLowerCase() === 'bsc',
+          )}
           renderItem={({ item }) => {
             const enabled =
               networkStatusRef.current.find(([id]) => id === item.id)?.[1] ??

@@ -58,7 +58,6 @@ const AccountMoreMenu: FC<IMenu> = (props) => {
   useEffect(() => {
     (async () => {
       if (!network) return false;
-
       const vaultSettings = await backgroundApiProxy.engine.getVaultSettings(
         network.id,
       );

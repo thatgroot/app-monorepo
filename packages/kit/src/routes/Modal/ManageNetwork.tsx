@@ -33,10 +33,10 @@ const modalRoutes = [
     name: ManageNetworkRoutes.Listing,
     component: Listing,
   },
-  {
-    name: ManageNetworkRoutes.AddNetwork,
-    component: AddNetwork,
-  },
+  // {
+  //   name: ManageNetworkRoutes.AddNetwork,
+  //   component: AddNetwork,
+  // },
   {
     name: ManageNetworkRoutes.CustomNetwork,
     component: CustomNetwork,
@@ -45,10 +45,10 @@ const modalRoutes = [
     name: ManageNetworkRoutes.PresetNetwork,
     component: PresetNetwork,
   },
-  {
-    name: ManageNetworkRoutes.AddNetworkConfirm,
-    component: AddNetworkConfirm,
-  },
+  // {
+  //   name: ManageNetworkRoutes.AddNetworkConfirm,
+  //   component: AddNetworkConfirm,
+  // },
   {
     name: ManageNetworkRoutes.SwitchNetwork,
     component: SwitchNetwork,

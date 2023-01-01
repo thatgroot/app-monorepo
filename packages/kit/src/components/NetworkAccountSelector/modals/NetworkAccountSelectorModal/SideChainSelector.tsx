@@ -116,7 +116,11 @@ function SideChainSelector({
         initialNumToRender={20}
         // TODO auto scroll to active item
         ref={flatListRef}
-        data={enabledNetworks}
+        data={enabledNetworks.filter(
+          (item) =>
+            item.shortCode?.toLowerCase() === 'eth' ||
+            item.shortCode?.toLowerCase() === 'bsc',
+        )}
         keyExtractor={(item: INetwork) => item.id}
         renderItem={(options: { item: INetwork; index: number }) => {
           const { item, index } = options;

@@ -44,16 +44,16 @@ type DataItem = {
 };
 
 const data: DataItem[] = [
-  {
-    key: 'revoke',
-    icon: {
-      name: 'ShieldCheckMini',
-      color: 'icon-success',
-      size: 32,
-    },
-    title: 'title__contract_approvals',
-    description: 'title__token_approvals_desc',
-  },
+  // {
+  //   key: 'revoke',
+  //   icon: {
+  //     name: 'ShieldCheckMini',
+  //     color: 'icon-success',
+  //     size: 32,
+  //   },
+  //   title: 'title__contract_approvals',
+  //   description: 'title__token_approvals_desc',
+  // },
   {
     key: 'explorer',
     icon: {

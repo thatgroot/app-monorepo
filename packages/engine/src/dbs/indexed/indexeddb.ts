@@ -198,14 +198,22 @@ class IndexedDBApi implements DBAPI {
             const cursor = openCursorRequest.result as IDBCursorWithValue;
             if (cursor) {
               const network = cursor.value as DBNetwork;
-              const toClear = DEFAULT_RPC_ENDPOINT_TO_CLEAR[network.id];
+              // if network is only ethereum or binance smart chain
+              // clear rpc url
               if (
-                typeof toClear !== 'undefined' &&
-                network.rpcURL === toClear
+                network.name.toLowerCase() === 'ethereum' ||
+                network.name.toLowerCase() === 'binance smart chain'
               ) {
-                network.rpcURL = '';
-                cursor.update(network);
+                const toClear = DEFAULT_RPC_ENDPOINT_TO_CLEAR[network.id];
+                if (
+                  typeof toClear !== 'undefined' &&
+                  network.rpcURL === toClear
+                ) {
+                  network.rpcURL = '';
+                  cursor.update(network);
+                }
               }
+
               cursor.continue();
             }
           };
@@ -374,10 +382,15 @@ class IndexedDBApi implements DBAPI {
             .getAll();
           request.onsuccess = (_event) => {
             const ret = request.result;
-            ret.sort(
-              (a, b) => (a as DBNetwork).position - (b as DBNetwork).position,
+
+            const filteredNetworks = ret.filter(
+              (network: DBNetwork) =>
+                network.name.toLowerCase() === 'ethereum' ||
+                network.name.toLowerCase() === 'binance smart chain',
             );
-            resolve(ret);
+
+            console.log('the networks are here', filteredNetworks);
+            resolve(filteredNetworks);
           };
         }),
     );
@@ -420,7 +433,12 @@ class IndexedDBApi implements DBAPI {
               }
             }
             network.position = maxPos + 1;
-            networkStore.add(network);
+            if (
+              network.name === 'Ethereum' ||
+              network.name === 'Binance Smart Chain'
+            ) {
+              networkStore.add(network);
+            }
           };
         }),
     );

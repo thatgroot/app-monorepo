@@ -135,7 +135,7 @@ const BackupWalletOptionsView: FC<BackupWalletViewProps> = () => {
               })}
               onPress={onManual}
             />
-            {supportedNFC && (
+            {/* {supportedNFC && (
               <BackupItem
                 imageSrc={OneKeyLite}
                 title={intl.formatMessage({ id: 'backup__onekey_lite_backup' })}
@@ -145,15 +145,15 @@ const BackupWalletOptionsView: FC<BackupWalletViewProps> = () => {
                 badgeType="success"
                 onPress={onLite}
               />
-            )}
-            <BackupItem
+            )} */}
+            {/* <BackupItem
               imageSrc={BackupKeyTag}
               title={intl.formatMessage({ id: 'form__onekey_keytag' })}
               discription={intl.formatMessage({
                 id: 'form__record_your_recovery_phrase_like_a_dot_punching_game',
               })}
               onPress={onKeyTag}
-            />
+            /> */}
           </Column>
         ),
       }}

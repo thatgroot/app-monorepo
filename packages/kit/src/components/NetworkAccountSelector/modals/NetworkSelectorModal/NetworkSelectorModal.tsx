@@ -34,9 +34,9 @@ function NetworkSelectorModal() {
       height="560px"
       rightContent={
         <>
-          <IconButton
+          {/* <IconButton
             type="plain"
-            size="lg"
+            size="xl"
             circle
             name="BarsArrowUpOutline"
             onPress={() => {
@@ -45,7 +45,7 @@ function NetworkSelectorModal() {
                 params: { screen: ManageNetworkRoutes.Sort },
               });
             }}
-          />
+          /> */}
           <IconButton
             type="plain"
             size="lg"

@@ -153,82 +153,86 @@ const ConnectHardwareModal: FC = () => {
     setDevices(convert(searchedDevices));
   }, [convert, searchedDevices]);
 
-  const handleScanDevice = useCallback(async () => {
-    if (!deviceUtils) return;
-    setIsSearching(true);
+  // const handleScanDevice = useCallback(async () => {
+  //   if (!deviceUtils) return;
+  //   setIsSearching(true);
 
-    const checkBridge = await serviceHardware.checkBridge();
-    if (typeof checkBridge === 'boolean' && !checkBridge) {
-      DialogManager.show({ render: <NeedBridgeDialog /> });
-      return;
-    }
-    if (
-      (checkBridge as unknown as OneKeyHardwareError).className ===
-      OneKeyErrorClassNames.OneKeyHardwareError
-    ) {
-      if (platformEnv.isDesktop) {
-        window.desktopApi.reloadBridgeProcess();
-        ToastManager.show(
-          {
-            title: intl.formatMessage({
-              id: (checkBridge as unknown as OneKeyHardwareError).key,
-            }),
-          },
-          {
-            type: 'default',
-          },
-        );
-      } else {
-        DialogManager.show({ render: <NeedBridgeDialog /> });
-      }
-      return;
-    }
-    deviceUtils.startDeviceScan(
-      (response) => {
-        if (!response.success) {
-          const error = deviceUtils.convertDeviceError(response.payload);
-          if (platformEnv.isNative) {
-            if (
-              !(error instanceof NeedBluetoothTurnedOn) &&
-              !(error instanceof NeedBluetoothPermissions) &&
-              !(error instanceof BleLocationServiceError)
-            ) {
-              ToastManager.show(
-                {
-                  title: intl.formatMessage({
-                    id: error.key,
-                  }),
-                },
-                { type: 'error' },
-              );
-            } else {
-              deviceUtils.stopScan();
-            }
-          } else if (
-            error instanceof InitIframeLoadFail ||
-            error instanceof InitIframeTimeout
-          ) {
-            ToastManager.show(
-              {
-                title: intl.formatMessage({
-                  id: error.key,
-                }),
-              },
-              { type: 'error' },
-            );
-            deviceUtils.stopScan();
-          }
-          setIsSearching(false);
-          return;
-        }
+  //   const checkBridge = await serviceHardware.checkBridge();
+  //   if (typeof checkBridge === 'boolean' && !checkBridge) {
+  //     DialogManager.show({ render: <NeedBridgeDialog /> });
+  //     return;
+  //   }
+  //   if (
+  //     (checkBridge as unknown as OneKeyHardwareError).className ===
+  //     OneKeyErrorClassNames.OneKeyHardwareError
+  //   ) {
+  //     if (platformEnv.isDesktop) {
+  //       window.desktopApi.reloadBridgeProcess();
+  //       ToastManager.show(
+  //         {
+  //           title: intl.formatMessage({
+  //             id: (checkBridge as unknown as OneKeyHardwareError).key,
+  //           }),
+  //         },
+  //         {
+  //           type: 'default',
+  //         },
+  //       );
+  //     } else {
+  //       DialogManager.show({ render: <NeedBridgeDialog /> });
+  //     }
+  //     return;
+  //   }
+  //   deviceUtils.startDeviceScan(
+  //     (response) => {
+  //       if (!response.success) {
+  //         const error = deviceUtils.convertDeviceError(response.payload);
+  //         if (platformEnv.isNative) {
+  //           if (
+  //             !(error instanceof NeedBluetoothTurnedOn) &&
+  //             !(error instanceof NeedBluetoothPermissions) &&
+  //             !(error instanceof BleLocationServiceError)
+  //           ) {
+  //             ToastManager.show(
+  //               {
+  //                 title: intl.formatMessage({
+  //                   id: error.key,
+  //                 }),
+  //               },
+  //               { type: 'error' },
+  //             );
+  //           } else {
+  //             deviceUtils.stopScan();
+  //           }
+  //         } else if (
+  //           error instanceof InitIframeLoadFail ||
+  //           error instanceof InitIframeTimeout
+  //         ) {
+  //           ToastManager.show(
+  //             {
+  //               title: intl.formatMessage({
+  //                 id: error.key,
+  //               }),
+  //             },
+  //             { type: 'error' },
+  //           );
+  //           deviceUtils.stopScan();
+  //         }
+  //         setIsSearching(false);
+  //         return;
+  //       }
 
-        setSearchedDevices(response.payload);
-      },
-      (state) => {
-        searchState.current = state;
-      },
-    );
-  }, [intl, serviceHardware]);
+  //       setSearchedDevices(response.payload);
+  //     },
+  //     (state) => {
+  //       searchState.current = state;
+  //     },
+  //   );
+  // }, [intl, serviceHardware]);
+
+  const handleScanDevice = () => {
+    //
+  };
 
   useEffect(() => {
     if (platformEnv.isRuntimeBrowser) handleScanDevice();

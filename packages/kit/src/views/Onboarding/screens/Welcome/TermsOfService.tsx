@@ -53,7 +53,9 @@ const TermsOfService: FC = () => {
             a: (text) => (
               <Text
                 color="text-subdued"
-                onPress={onOpenUserAgreement}
+                onPress={() => {
+                  // onOpenUserAgreement
+                }}
                 typography="CaptionUnderline"
               >
                 {text}
@@ -62,7 +64,9 @@ const TermsOfService: FC = () => {
             b: (text) => (
               <Text
                 color="text-subdued"
-                onPress={onOpenPrivacyPolicy}
+                onPress={() => {
+                  // onOpenPrivacyPolicy
+                }}
                 typography="CaptionUnderline"
               >
                 {text}

@@ -80,7 +80,7 @@ function SecondaryContent({
             }
           }}
         />
-        {thirdPartyHardwareOptions.map((option) => (
+        {/* {thirdPartyHardwareOptions.map((option) => (
           <ConnectWalletListItem
             key={option.label}
             label={option.label}
@@ -88,7 +88,7 @@ function SecondaryContent({
             logoSource={option.logo}
             onPress={() => {}}
           />
-        ))}
+        ))} */}
       </Box>
     </Center>
   );

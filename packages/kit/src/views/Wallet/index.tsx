@@ -32,7 +32,7 @@ import AccountInfo, {
 } from './AccountInfo';
 import AssetsList from './AssetsList';
 import BackupToast from './BackupToast';
-import NFTList from './NFT/NFTList';
+// import NFTList from './NFT/NFTList';
 import ToolsPage from './Tools';
 import { WalletHomeTabEnum } from './type';
 
@@ -137,12 +137,7 @@ const WalletTabs: FC = () => {
             <GuideToPushFirstTimeCheck />
           </>
         </Tabs.Tab>
-        <Tabs.Tab
-          name={WalletHomeTabEnum.Collectibles}
-          label={intl.formatMessage({ id: 'asset__collectibles' })}
-        >
-          <NFTList />
-        </Tabs.Tab>
+
         <Tabs.Tab
           name={WalletHomeTabEnum.History}
           label={intl.formatMessage({ id: 'transaction__history' })}

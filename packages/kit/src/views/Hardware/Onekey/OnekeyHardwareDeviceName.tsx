@@ -46,10 +46,10 @@ type DeviceNameProps = {
 };
 
 const defaultName: Record<IOneKeyDeviceType, string> = {
-  'classic': 'OneKey Classic',
-  'mini': 'OneKey Mini',
-  'touch': 'OneKey Touch',
-  'pro': 'OneKey Pro',
+  'classic': 'Arbitrum Classic',
+  'mini': 'Arbitrum Mini',
+  'touch': 'Arbitrum Touch',
+  'pro': 'Arbitrum Pro',
 };
 
 const OnekeyHardwareDeviceName: FC<DeviceNameProps> = ({

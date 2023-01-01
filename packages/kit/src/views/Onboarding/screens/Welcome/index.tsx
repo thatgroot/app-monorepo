@@ -115,11 +115,11 @@ const Welcome = () => {
   }, [navigation]);
 
   const logos = [
-    LogoOneKey,
-    LogoTrezor,
-    LogoLedger,
+    // LogoOneKey,
+    // LogoTrezor,
+    // LogoLedger,
     LogoMetaMask,
-    LogoTokenPocket,
+    // LogoTokenPocket,
   ];
 
   return (
@@ -131,14 +131,14 @@ const Welcome = () => {
         scaleFade
         disableAnimation={disableAnimation}
       >
-        <Icon name="BrandLogoIllus" size={48} />
+        {/* <Icon name="BrandLogoIllus" size={48} />
         <Text typography={{ sm: 'DisplayXLarge', md: 'Display2XLarge' }} mt={6}>
           {intl.formatMessage({ id: 'onboarding__landing_welcome_title' })}
           {'\n'}
           <Text color="text-subdued">
             {intl.formatMessage({ id: 'onboarding__landing_welcome_desc' })}
           </Text>
-        </Text>
+        </Text> */}
         <Box
           flexDir={{ sm: 'row' }}
           flexWrap={{ sm: 'wrap' }}
