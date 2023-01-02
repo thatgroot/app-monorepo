@@ -29,7 +29,6 @@
       },
       "distribution": "internal",
       "android": {
-        "buildType": "apk",
         "gradleCommand": ":app:assembleDebug",
         "credentialsSource": "local",
         "env": {
@@ -50,7 +49,6 @@
         "ENTRY_FILE": "./__generated__/AppEntry.js"
       },
       "android": {
-        "buildType": "app-bundle",
         "gradleCommand": ":app:bundleRelease",
         "credentialsSource": "local",
         "env": {
@@ -71,7 +69,6 @@
         "ENTRY_FILE": "./__generated__/AppEntry.js"
       },
       "android": {
-        "buildType": "app-bundle",
         "gradleCommand": ":app:assembleRelease",
         "credentialsSource": "local",
         "env": {
