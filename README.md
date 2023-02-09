@@ -113,16 +113,3 @@ Refer to https://github.com/yarnpkg/yarn/issues/7807, set the current environmen
         </tr>
     </tbody>
 </table>
-
-## ✨ Salute!
-
-[![](https://img.shields.io/github/contributors-anon/OneKeyHQ/app-monorepo?style=for-the-badge&labelColor=000)](https://github.com/OneKeyHQ/app-monorepo/graphs/contributors)
-
-<a href="https://github.com/onekeyhq/app-monorepo/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=onekeyhq/app-monorepo&max=240&columns=24"/>
-</a>
-
-## ⚖️ License
-
-OneKey is available under the [MIT](https://github.com/OneKeyHQ/app-monorepo/blob/onekey/LICENSE) license. 
-Free for commercial and non-commercial use.
