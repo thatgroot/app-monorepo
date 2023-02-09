@@ -67,13 +67,6 @@ For any environment, module and dependency issues in the startup phase, it is re
 
 Refer to https://github.com/yarnpkg/yarn/issues/7807, set the current environment yarn version to 1.18.0 through the command `yarn policies set-version 1.18.0`
 
-## 🕋 Roadmap
-
-Check out where we are now!
-
-<kbd><img src="https://github.com/rayston92/graph_bed/blob/master/img/roadmap_light.png?raw=true" alt="Roadmap of OneKey"/></kbd>
-
-
 ## 💬 Docs in your languages
 | Available Languages               |
 | :--------------------------- |
